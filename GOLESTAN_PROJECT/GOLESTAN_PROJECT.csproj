@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D4C1C919-3C89-4EB6-A6B6-8187A9D6BF0D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GOLESTAN_PROJECT</RootNamespace>
+    <AssemblyName>GOLESTAN_PROJECT</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommandCenter.cs" />
+    <Compile Include="Edit_User_Information.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit_User_Information.Designer.cs">
+      <DependentUpon>Edit_User_Information.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FileManagers.cs" />
+    <Compile Include="InfoManager.cs" />
+    <Compile Include="Moderator_DefineClass_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Moderator_DefineClass_Form.Designer.cs">
+      <DependentUpon>Moderator_DefineClass_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Moderator_Define_Semester.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Moderator_Define_Semester.Designer.cs">
+      <DependentUpon>Moderator_Define_Semester.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Moderator_EditClass_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Moderator_EditClass_Form.Designer.cs">
+      <DependentUpon>Moderator_EditClass_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Moderator_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Moderator_Form.Designer.cs">
+      <DependentUpon>Moderator_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Moderator_SemesterManage_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Moderator_SemesterManage_Form.Designer.cs">
+      <DependentUpon>Moderator_SemesterManage_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Moderator_ShowSemesterClass_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Moderator_ShowSemesterClass_Form.Designer.cs">
+      <DependentUpon>Moderator_ShowSemesterClass_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Moderator_Signup_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Moderator_Signup_Form.Designer.cs">
+      <DependentUpon>Moderator_Signup_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Moderator_UserList_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Moderator_UserList_Form.Designer.cs">
+      <DependentUpon>Moderator_UserList_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Moderator_ViewClassInSemesterInfo_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Moderator_ViewClassInSemesterInfo_Form.Designer.cs">
+      <DependentUpon>Moderator_ViewClassInSemesterInfo_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Professor_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Professor_Form.Designer.cs">
+      <DependentUpon>Professor_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Professor_Semester_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Professor_Semester_Form.Designer.cs">
+      <DependentUpon>Professor_Semester_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Professor_ShowSemseterClass_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Professor_ShowSemseterClass_Form.Designer.cs">
+      <DependentUpon>Professor_ShowSemseterClass_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Professor_Signup_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Professor_Signup_Form.designer.cs">
+      <DependentUpon>Professor_Signup_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Golestan_B.cs" />
+    <Compile Include="Login_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login_Form.Designer.cs">
+      <DependentUpon>Login_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Professor_ViewClassInSemesterInfo_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Professor_ViewClassInSemesterInfo_Form.Designer.cs">
+      <DependentUpon>Professor_ViewClassInSemesterInfo_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student_ClassRegistration_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student_ClassRegistration_Form.Designer.cs">
+      <DependentUpon>Student_ClassRegistration_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student_Form.Designer.cs">
+      <DependentUpon>Student_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student_SemesterClass_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student_SemesterClass_Form.Designer.cs">
+      <DependentUpon>Student_SemesterClass_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student_Semesters_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student_Semesters_Form.Designer.cs">
+      <DependentUpon>Student_Semesters_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student_Signup_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student_Signup_Form.designer.cs">
+      <DependentUpon>Student_Signup_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Initial_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Initial_Form.Designer.cs">
+      <DependentUpon>Initial_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Edit_User_Information.resx">
+      <DependentUpon>Edit_User_Information.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Moderator_DefineClass_Form.resx">
+      <DependentUpon>Moderator_DefineClass_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Moderator_Define_Semester.resx">
+      <DependentUpon>Moderator_Define_Semester.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Moderator_EditClass_Form.resx">
+      <DependentUpon>Moderator_EditClass_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Moderator_Form.resx">
+      <DependentUpon>Moderator_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Moderator_SemesterManage_Form.resx">
+      <DependentUpon>Moderator_SemesterManage_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Moderator_ShowSemesterClass_Form.resx">
+      <DependentUpon>Moderator_ShowSemesterClass_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Moderator_Signup_Form.resx">
+      <DependentUpon>Moderator_Signup_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Moderator_UserList_Form.resx">
+      <DependentUpon>Moderator_UserList_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Moderator_ViewClassInSemesterInfo_Form.resx">
+      <DependentUpon>Moderator_ViewClassInSemesterInfo_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Professor_Form.resx">
+      <DependentUpon>Professor_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Professor_Semester_Form.resx">
+      <DependentUpon>Professor_Semester_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Professor_ShowSemseterClass_Form.resx">
+      <DependentUpon>Professor_ShowSemseterClass_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Professor_Signup_Form.resx">
+      <DependentUpon>Professor_Signup_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login_Form.resx">
+      <DependentUpon>Login_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Professor_ViewClassInSemesterInfo_Form.resx">
+      <DependentUpon>Professor_ViewClassInSemesterInfo_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_ClassRegistration_Form.resx">
+      <DependentUpon>Student_ClassRegistration_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_Form.resx">
+      <DependentUpon>Student_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_SemesterClass_Form.resx">
+      <DependentUpon>Student_SemesterClass_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_Semesters_Form.resx">
+      <DependentUpon>Student_Semesters_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_Signup_Form.resx">
+      <DependentUpon>Student_Signup_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Initial_Form.resx">
+      <DependentUpon>Initial_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
